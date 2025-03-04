@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special For You</title>
+    <script src="https://dekatutorial.github.io/flwr/s.js"></script>
+    <style>
+      /* Gaya untuk label */
+      .custom-label {
+        position: fixed; /* Agar selalu berada di pojok */
+        bottom: 0; /* Posisikan di bagian bawah */
+        left: 0; /* Posisikan di kiri bawah */
+        background-color: white; /* Warna latar belakang */
+        color: black; /* Warna teks */
+        padding: 5px 10px; /* Ruang di dalam label, sesuaikan agar tidak terlalu tebal */
+        z-index: 9999; /* Pastikan label berada di atas elemen lain */
+        font-size: 12px; /* Ukuran font */
+        font-family: Arial, sans-serif; /* Font sederhana */
+        border-top-right-radius: 5px; /* Membuat sudut atas label melengkung */
+        white-space: nowrap; /* Agar teks tidak terbungkus ke baris berikutnya */
+        text-align: left; /* Teks berada di kiri */
+      }
+
+      /* Menutupi seluruh teks asli jika perlu */
+      body::after {
+        content: " "; /* Konten kosong untuk menutupi */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px; /* Tinggi diperbesar agar menutupi lebih banyak area jika diperlukan */
+        background-color: white;
+        z-index: 9998; /* Agar berada di bawah label "By Ahdi" */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="open">
+      <i>❤️</i>
+      <span>Klik love nya</span>
+    </div>
+
+    <script>
+      // Variabel untuk ucapan dan informasi lainnya
+      ucapan = `Semoga di usia yang baru ini, semua impian Pipi semakin dekat untuk diraih. 
+      Semoga kesehatan, kebahagiaan, dan kesuksesan selalu menyertai pipi dalam setiap langkah. 
+      Terus jadi pribadi yang penuh semangat dan inspirasi seperti yang Didi kenal. 
+      Happy birthday, Pipi! Tetap bersinar dan jadi kebanggaan orang-orang di sekitarmu.`;
+      musik = `Musik.mp3`;
+      nomorWhatsapp = `089647719232`;
+      idTelegram = ``;
+
+      // Memanggil fungsi DekaTutorial
+      DekaTutorial(ucapan, musik, nomorWhatsapp, idTelegram);
+    </script>
+
+    <!-- Label yang menutupi teks asli -->
+    <div class="custom-label">By Ahdi</div>
+  </body>
+</html>
